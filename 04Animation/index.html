@@ -29,7 +29,8 @@
                    easing: linear; 
                    loop: true">
              
-   
+  attribute=color ;
+        from 
              
       </a-box>
       <a-box id="myOtherBox" 
@@ -39,7 +40,16 @@
         height="1" 
         depth="1" 
         material="src: #wood2"
-        shadow>  
+        shadow
+            
+            animation="attribute: color;
+                        from: green;
+                        to: red;
+                        dur: 1000; 
+                        repeat: indefinite;
+                        direction: alternate"
+             
+             >  
       </a-box>
       <a-plane id="ground"
         position="0 0 -4" 
