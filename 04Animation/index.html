@@ -22,17 +22,10 @@
         depth="1" 
         material="src: #wood"
         shadow 
-        
-    animation="property: rotation; 
-               begin=startbox;
-             attribute=position ;
-               from= -1 0.5 -3 to=-1 1.25 -3;
-               delay=10;
-               dur=1500;
-               fill=forwards;
-               repeat=0;
-                easing: linear; 
-                loop: true"
+  
+    animation attribute="material" to "grass" from "wood" dur "2000" repeat "indefinite" direction "alternate"
+             
+   
              
       </a-box>
       <a-box id="myOtherBox" 
