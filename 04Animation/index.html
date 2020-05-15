@@ -42,14 +42,11 @@
         material="src: #wood2"
         shadow
             
-            animation="attribute: color;
-                        from: green;
-                        to: red;
-                        dur: 1000; 
-                        repeat: indefinite;
-                        direction: alternate"
-             
-             >  
+            animation="property: rotation; 
+                   to: 1 8 -10; 
+                   dur: 2000; 
+                   easing: linear; 
+                   loop: true">
       </a-box>
       <a-plane id="ground"
         position="0 0 -4" 
